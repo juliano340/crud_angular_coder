@@ -13,7 +13,7 @@ import {MatListModule} from '@angular/material/list';
     selector: 'app-root',
     standalone: true,
     templateUrl: 'app.component.html',
-    imports: [RouterOutlet, HeaderComponent, MatToolbarModule, FooterComponent,MatSidenavModule, MatListModule],
+    imports: [RouterOutlet, HeaderComponent, MatToolbarModule, FooterComponent,MatSidenavModule, MatListModule, NavComponent],
 })
 export class AppComponent {
   
