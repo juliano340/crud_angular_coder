@@ -3,6 +3,10 @@
     width: 200px;
 }
 
+.mat-nav-list > a {
+    color: #FFF;
+}
+
 .mat-nav-list a i,
 .mat-nav-list a span {
     color: #FFF !important;
@@ -16,4 +20,9 @@
 .content {
     padding: 16px;
     background-color: #FFF; 
+}
+
+i, a {
+    text-decoration: none;
+    color: #FFF;
 }
