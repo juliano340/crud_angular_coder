@@ -10,6 +10,7 @@ import { HomeComponent } from './views/home/home.component';
 import {MatCardModule } from '@angular/material/card';
 
 
+
 @Component({
     selector: 'app-root',
     standalone: true,
