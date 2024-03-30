@@ -12,14 +12,17 @@ import {MatButtonModule} from '@angular/material/button';
 
 import { HttpClientModule } from '@angular/common/http';
 
-
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: 'app.component.html',
     imports: [RouterOutlet, HeaderComponent, MatToolbarModule, FooterComponent,
-        MatSidenavModule, MatListModule, NavComponent, HomeComponent, MatCardModule, MatButtonModule, HttpClientModule],
+        MatSidenavModule, MatListModule, NavComponent, HomeComponent, MatCardModule, MatButtonModule, HttpClientModule, 
+        FormsModule, MatFormFieldModule, MatInputModule],
 })
 export class AppComponent {
   

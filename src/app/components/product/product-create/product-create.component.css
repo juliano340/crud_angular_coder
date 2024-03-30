@@ -1,0 +1,15 @@
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+button {
+    margin-top: 10px;
+    align-self: flex-start;
+    margin-right: 10px;
+}
+
+.card {
+    padding: 2 0px;
+}
