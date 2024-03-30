@@ -3,14 +3,6 @@
     width: 200px;
 }
 
-.mat-nav-list > a {
-    color: #FFF;
-}
-
-.mat-nav-list a i,
-.mat-nav-list a span {
-    color: #FFF !important;
-}
 
 .sidenav  i {
     padding-right: 10px;
@@ -22,7 +14,29 @@
     background-color: #FFF; 
 }
 
-i, a {
-    text-decoration: none;
-    color: #FFF;
+span {
+    color:#FFF;
 }
+
+
+
+.nav-link {
+    color: white; /* Define a cor do texto como branca */
+  }
+  
+  .nav-link i { /* Aplica a cor branca também aos ícones */
+    color: white;
+  }
+
+  .mat-mdc-list-item-unscoped-content, .material-icons {
+    color: white !important;
+  }
+
+
+
+  :host ::ng-deep mat-mdc-list-item-unscoped-content,
+  :host ::ng-deep .mdc-list-item__primary-text {
+    color: white !important;
+  }
+  
+  
