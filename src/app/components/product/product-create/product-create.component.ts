@@ -19,8 +19,9 @@ import {MatButtonModule} from '@angular/material/button';
 export class ProductCreateComponent implements OnInit {
 
   product : Product = {
+
     name: '',
-    price: 0
+    price: undefined
   }
 
   constructor( private productService: ProductService, private router: Router) { }
@@ -30,7 +31,7 @@ export class ProductCreateComponent implements OnInit {
 
  createProduct(): void {
   this.productService.create(this.product ).subscribe(() => {
-    this.productService.showMessage('Product created!');
+    this.productService.showMessage('Produto cadastrado com sucesso!');
     this.router.navigate(['/products']);
   })
    
