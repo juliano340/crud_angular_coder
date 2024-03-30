@@ -8,6 +8,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import { HomeComponent } from './views/home/home.component';
 import {MatCardModule } from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -16,7 +19,7 @@ import {MatCardModule } from '@angular/material/card';
     standalone: true,
     templateUrl: 'app.component.html',
     imports: [RouterOutlet, HeaderComponent, MatToolbarModule, FooterComponent,
-        MatSidenavModule, MatListModule, NavComponent, HomeComponent, MatCardModule],
+        MatSidenavModule, MatListModule, NavComponent, HomeComponent, MatCardModule, MatButtonModule, HttpClientModule],
 })
 export class AppComponent {
   
