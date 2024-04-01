@@ -30,6 +30,11 @@ export class ProductCreateComponent implements OnInit {
  } 
 
  createProduct(): void {
+  if (this.product.name === '' || this.product.price === undefined) {
+    this.productService.showMessage('Preencha todos os campos!', true);
+    return
+    
+  }
   this.productService.create(this.product ).subscribe(() => {
     this.productService.showMessage('Produto cadastrado com sucesso!');
     this.router.navigate(['/products']);

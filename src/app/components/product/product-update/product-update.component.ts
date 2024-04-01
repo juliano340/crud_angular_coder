@@ -39,9 +39,15 @@ export class ProductUpdateComponent implements OnInit {
     
   }
 
-  
-
   updateProduct(): void {
+    console.log(this.product)
+    const testPrice = String(this.product.price)
+    if (this.product.name === '' || testPrice === '') {
+      this.productService.showMessage('Preencha todos os campos!', true);
+      return
+      
+    }
+
     this.productService.update(this.product).subscribe(() => {
       this.productService.showMessage('Produto atualizado!')
       this.router.navigate(['/products'])
